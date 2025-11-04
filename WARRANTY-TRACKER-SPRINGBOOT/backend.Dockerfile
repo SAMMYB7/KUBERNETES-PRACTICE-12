@@ -19,4 +19,5 @@ COPY --from=builder /app/target/*.jar app.jar
 
 EXPOSE 1901
 
+
 ENTRYPOINT ["java", "-jar", "app.jar"]
