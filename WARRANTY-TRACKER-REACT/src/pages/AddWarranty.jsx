@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import config from '../components/config.js';
 import './pages.css';
 
 const AddWarranty = () => {
@@ -13,7 +12,7 @@ const AddWarranty = () => {
   });
   const [message, setMessage] = useState('');
 
-  const baseUrl = `${config.url}/warrantyapi`;
+  const baseUrl = `${import.meta.env.VITE_API_URL}/warrantyapi`;
 
   const handleChange = (e) => {
     setWarranty({ ...warranty, [e.target.name]: e.target.value });

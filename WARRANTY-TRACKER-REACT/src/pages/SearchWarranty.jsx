@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import config from '../components/config.js';
 import './pages.css';
 
 const SearchWarranty = () => {
@@ -9,7 +8,7 @@ const SearchWarranty = () => {
   const [message, setMessage] = useState('');
   const [searching, setSearching] = useState(false);
 
-  const baseUrl = `${config.url}/warrantyapi`;
+  const baseUrl = `${import.meta.env.VITE_API_URL}/warrantyapi`;
 
   const getWarrantyById = async () => {
     if (!idToFetch.trim()) {

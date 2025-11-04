@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-WarrantyTrackerSpringbootApplication<WARRANTY-TRACKER-SPRINGBOOT>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.klef.lab.WarrantyTrackerSpringbootApplication",
+            "projectName": "WARRANTY-TRACKER-SPRINGBOOT",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
